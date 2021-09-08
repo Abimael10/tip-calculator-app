@@ -18,6 +18,12 @@ body {
   margin: 2rem 0;
 }
 
+@media (max-width: 37.5em) {
+  .top h1 {
+    margin: 1rem;
+  }
+}
+
 .app {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -31,9 +37,44 @@ body {
   margin: 0 10rem;
 }
 
+@media (max-width: 37.5em) {
+  .app {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 1rem;
+    margin: 0;
+  }
+}
+
+@media (min-width: 37.5em) {
+  .app {
+    margin: 0 1rem;
+  }
+}
+
+@media (min-width: 50em) {
+  .app {
+    margin: 0 2rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .app {
+    margin: 0 10rem;
+  }
+}
+
 .app .data {
   width: 50%;
   padding: 1rem 2rem;
+}
+
+@media (max-width: 37.5em) {
+  .app .data {
+    width: 100%;
+  }
 }
 
 .app .data .billing {
@@ -80,6 +121,13 @@ body {
   font-weight: 700;
 }
 
+@media (max-width: 37.5em) {
+  .app .data .tip-percents .percent-options {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
 .app .data .tip-percents .percent-options .percent-total {
   background-color: #00494d;
   font-size: 1.3rem;
@@ -97,11 +145,6 @@ body {
   cursor: pointer;
 }
 
-.app .data .tip-percents .percent-options .exception {
-  background-color: #f4fafa;
-  color: #00494d;
-}
-
 .app .calculation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -117,6 +160,12 @@ body {
   background-color: #00494d;
   padding: 3rem;
   color: white;
+}
+
+@media (max-width: 37.5em) {
+  .app .calculation {
+    width: 100%;
+  }
 }
 
 .app .calculation .tip-amount {

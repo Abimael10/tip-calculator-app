@@ -1,11 +1,16 @@
 //Imports
 @import 'helpers/general-config';
+@import 'helpers/mixins';
 
 .top h1 {
     font-size: 1.5rem;
     font-weight: 400;
     text-align: center;
     margin: 2rem 0;
+
+    @include breakpoint(phone) {
+        margin: 1rem;
+    }
 }
 
 .app {
@@ -16,9 +21,31 @@
     padding: 3rem;
     margin: 0 10rem;
 
+    @include breakpoint(phone) {
+        flex-direction: column;
+        padding: 1rem;
+        margin: 0;
+    }
+
+    @include breakpoint(phablet) {
+        margin: 0 1rem;
+    }
+
+    @include breakpoint(tablet) {
+        margin: 0 2rem;
+    }
+
+    @include breakpoint (desktop) {
+        margin: 0 10rem;
+    }
+
     & .data {
         width: 50%;
         padding: 1rem 2rem;
+
+        @include breakpoint(phone) {
+            width: 100%;
+        }
 
         & .billing {
             position: relative;
@@ -60,6 +87,10 @@
                 grid-gap: .5rem;
                 font-weight: 700;
 
+                @include breakpoint(phone) {
+                    grid-template-columns: 1fr 1fr;
+                }
+
                 & .percent-total {
                     background-color: $dark-cyan;
                     font-size: 1.3rem;
@@ -75,11 +106,6 @@
                         cursor: pointer;
                     }
                 }
-
-                & .exception {
-                    background-color: $light-gray-cyan;
-                    color: $dark-cyan;
-                }
             }
         }
     }
@@ -92,6 +118,10 @@
         background-color: $dark-cyan;
         padding: 3rem;
         color: $white;
+
+        @include breakpoint(phone) {
+            width: 100%;
+        }
 
         & .tip-amount {
             display: flex;
