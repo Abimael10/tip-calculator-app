@@ -1,0 +1,145 @@
+//Imports
+@import 'helpers/general-config';
+
+.top h1 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.app {
+    display: flex;
+    justify-content: space-between;
+    background-color: $white;
+    border-radius: 24px;
+    padding: 3rem;
+    margin: 0 10rem;
+
+    & .data {
+        width: 50%;
+        padding: 1rem 2rem;
+
+        & .billing {
+            position: relative;
+
+            & label {
+                font-weight: 700;
+            }
+    
+            & .bill-input, & .amount-people {
+                border: none;
+                background-color: $light-gray-cyan;
+                width: 100%;
+                font-family: $general-font;
+                font-weight: 700;
+                color: $dark-grayish-cyan;
+                padding: .7rem;
+                border-radius: 5px;
+                text-align: end;
+            }
+
+            & .svg-dollar {
+                position: absolute;
+                left: 10px;
+                top: 2.2rem;
+                bottom: 0;
+            }
+        }
+
+        & .tip-percents {
+            margin: 2rem 0;
+
+            & .header {
+                font-weight: 700;
+            }
+
+            & .percent-options {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-gap: .5rem;
+                font-weight: 700;
+
+                & .percent-total {
+                    background-color: $dark-cyan;
+                    font-size: 1.3rem;
+                    text-align: center;
+                    color: $white;
+                    padding: .3rem 1rem;
+                    border-radius: 5px;
+                    transition: .3s ease;
+
+                    &:hover {
+                        background-color: $light-grayish-cyan;
+                        color: $dark-cyan;
+                        cursor: pointer;
+                    }
+                }
+
+                & .exception {
+                    background-color: $light-gray-cyan;
+                    color: $dark-cyan;
+                }
+            }
+        }
+    }
+
+    & .calculation {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 50%;
+        background-color: $dark-cyan;
+        padding: 3rem;
+        color: $white;
+
+        & .tip-amount {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            }
+
+            & .label {
+                font-weight: 700;
+                font-size: 1.1rem;
+    
+                & span {
+                    font-size: 1rem;
+                    color: $light-grayish-cyan;
+                }
+        }
+
+        & .total {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            }
+
+            & .label {
+                font-weight: 700;
+                font-size: 1.1rem;
+    
+                & span {
+                    font-size: 1rem;
+                    color: $light-grayish-cyan;
+                }
+        }
+
+        & .amount {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: $strong-cyan;
+        }
+
+        & .reset-btn {
+            background-color: $strong-cyan;
+            font-size: 2rem;
+            font-family: $general-font;
+            color: $dark-cyan;
+            padding: .5rem;
+            border: 0;
+            border-radius: 5px;
+        }
+    }
+
+}

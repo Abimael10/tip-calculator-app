@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  background-color: #c5e4e7;
+}
+
+.top h1 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: white;
+  border-radius: 24px;
+  padding: 3rem;
+  margin: 0 10rem;
+}
+
+.app .data {
+  width: 50%;
+  padding: 1rem 2rem;
+}
+
+.app .data .billing {
+  position: relative;
+}
+
+.app .data .billing label {
+  font-weight: 700;
+}
+
+.app .data .billing .bill-input, .app .data .billing .amount-people {
+  border: none;
+  background-color: #f4fafa;
+  width: 100%;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  color: #5e7a7d;
+  padding: .7rem;
+  border-radius: 5px;
+  text-align: end;
+}
+
+.app .data .billing .svg-dollar {
+  position: absolute;
+  left: 10px;
+  top: 2.2rem;
+  bottom: 0;
+}
+
+.app .data .tip-percents {
+  margin: 2rem 0;
+}
+
+.app .data .tip-percents .header {
+  font-weight: 700;
+}
+
+.app .data .tip-percents .percent-options {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: .5rem;
+  font-weight: 700;
+}
+
+.app .data .tip-percents .percent-options .percent-total {
+  background-color: #00494d;
+  font-size: 1.3rem;
+  text-align: center;
+  color: white;
+  padding: .3rem 1rem;
+  border-radius: 5px;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.app .data .tip-percents .percent-options .percent-total:hover {
+  background-color: #c5e4e7;
+  color: #00494d;
+  cursor: pointer;
+}
+
+.app .data .tip-percents .percent-options .exception {
+  background-color: #f4fafa;
+  color: #00494d;
+}
+
+.app .calculation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 50%;
+  background-color: #00494d;
+  padding: 3rem;
+  color: white;
+}
+
+.app .calculation .tip-amount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.app .calculation .label {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.app .calculation .label span {
+  font-size: 1rem;
+  color: #c5e4e7;
+}
+
+.app .calculation .total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.app .calculation .label {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.app .calculation .label span {
+  font-size: 1rem;
+  color: #c5e4e7;
+}
+
+.app .calculation .amount {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #26c0ab;
+}
+
+.app .calculation .reset-btn {
+  background-color: #26c0ab;
+  font-size: 2rem;
+  font-family: "Space Mono", monospace;
+  color: #00494d;
+  padding: .5rem;
+  border: 0;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=style.css.map */
